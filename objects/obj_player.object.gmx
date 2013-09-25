@@ -302,6 +302,10 @@ for(i=0;i&lt;abs(ysp);i++)
     {
         y += sign(ysp);
     }
+    if(place_meeting(x,y+sign(ysp),obj_wall) &amp;&amp; grounded == 0)
+    {
+        ysp += grav;
+    } 
 }
 </string>
           </argument>
